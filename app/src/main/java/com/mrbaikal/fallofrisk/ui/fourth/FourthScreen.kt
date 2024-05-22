@@ -42,14 +42,13 @@ fun FourthScreen(
     val errorText = stringResource(id = R.string.input_error_text)
     val resultOptions = stringArrayResource(id = R.array.result_options)
     var dialogState by remember { mutableStateOf(false) }
-    var buttonState by remember { mutableStateOf(true) }
 
-    var foamState by remember { mutableStateOf("30") }
-    var tandemState by remember { mutableStateOf("3.22") }
-    var reachState by remember { mutableStateOf("14") }
-    var goState by remember { mutableStateOf("9.6") }
-    var eyesOpenState by remember { mutableStateOf("4.85") }
-    var eyesClosedState by remember { mutableStateOf("2.72") }
+    var foamState by remember { mutableStateOf("") }
+    var tandemState by remember { mutableStateOf("") }
+    var reachState by remember { mutableStateOf("") }
+    var goState by remember { mutableStateOf("") }
+    var eyesOpenState by remember { mutableStateOf("") }
+    var eyesClosedState by remember { mutableStateOf("") }
 
     Column(
         modifier = Modifier

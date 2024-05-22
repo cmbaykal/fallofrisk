@@ -49,8 +49,8 @@ fun FirstScreen(
     val scrollState = rememberScrollState()
     val errorText = stringResource(id = R.string.input_error_text)
 
-    var lengthState by remember { mutableStateOf("163") }
-    var weightState by remember { mutableStateOf("83") }
+    var lengthState by remember { mutableStateOf("") }
+    var weightState by remember { mutableStateOf("") }
     var vkiState by remember { mutableDoubleStateOf(0.0) }
     var buttonState by remember { mutableStateOf(true) }
 

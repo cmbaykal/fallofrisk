@@ -54,7 +54,7 @@ fun SecondScreen(
         mutableStateOf(imbalanceValueOptions[4])
     }
 
-    var imbalanceTimeState by remember { mutableStateOf("36") }
+    var imbalanceTimeState by remember { mutableStateOf("") }
     var buttonState by remember { mutableStateOf(true) }
 
     Column(
