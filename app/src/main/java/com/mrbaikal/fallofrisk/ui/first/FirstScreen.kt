@@ -66,10 +66,16 @@ fun FirstScreen(
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(
+                modifier = Modifier.padding(top = 16.dp),
+                fontSize = 16.sp,
+                text = stringResource(R.string.app_description)
+            )
+
             TextField(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 16.dp),
+                    .padding(top = 24.dp),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = lengthState,

@@ -178,7 +178,7 @@ fun FourthScreen(
         if (dialogState && riskState != null) {
             AlertDialog(onDismissRequest = { dialogState = false },
                 title = {
-                    Text("Result")
+                    Text(stringResource(id = R.string.result_text))
                 },
                 text = {
                     Text(resultOptions[riskState])
@@ -189,7 +189,7 @@ fun FourthScreen(
                             dialogState = false
                         }
                     ) {
-                        Text("Close")
+                        Text(stringResource(id = R.string.close_text))
                     }
                 }
             )

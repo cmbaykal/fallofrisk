@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">FallOfRisk</string>
+    <string name="app_description">This software was developed to estimate the fall risk of individuals aged 65-79.</string>
 
     <string name="next_text">Next</string>
     <string name="calculate_text">Calculate</string>
+    <string name="result_text">Result</string>
+    <string name="close_text">Close</string>
     <string name="input_error_text">Please fill the provided information fields!</string>
 
     <string name="length_hint">Length (cm)</string>
