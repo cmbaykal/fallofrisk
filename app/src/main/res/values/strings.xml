@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">FallOfRisk</string>
+
+    <string name="next_text">Next</string>
+    <string name="calculate_text">Calculate</string>
+    <string name="input_error_text">Please fill the provided information fields!</string>
+
+    <string name="length_hint">Length (cm)</string>
+    <string name="weigth_hint">Weight (kg)</string>
+    <string name="vki_result_text">Your body mass index : %.2f</string>
+
+    <string name="imbalance_state_hint">Imbalance State</string>
+    <string name="imbalance_hint">If you have an imbalance, how severe is it?</string>
+    <string name="imbalance_time_hint">If you have an imbalance, what is the duration?</string>
+
+    <string name="hypertension_hint">Hypertension</string>
+    <string name="diabetes_hint">Diabetes mellitus</string>
+
+    <string name="foam_romberg_hint">Foam Pad Romberg</string>
+    <string name="tandem_hint">Tandem Romberg</string>
+    <string name="reaching_hint">Functional Reaching Test</string>
+    <string name="go_hint">Timed Up and Go Test</string>
+    <string name="eyes_open_hint">Standing on One Leg with Eyes Open Test</string>
+    <string name="eyes_closed_hint">Standing on One Leg with Eyes Closed Test</string>
+
+    <string-array name="result_options">
+        <item>There is a low risk of falling.</item>
+        <item>There is a high of falling.</item>
+    </string-array>
+
+    <string-array name="boolean_options">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="numeric_options">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>
