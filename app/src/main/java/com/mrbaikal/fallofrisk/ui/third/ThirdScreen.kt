@@ -38,7 +38,7 @@ fun ThirdScreen(
     val booleanOptions = stringArrayResource(id = R.array.boolean_options)
 
     var hypertensionExpanded by remember { mutableStateOf(false) }
-    val (hypertensionSelected, onHypertensionSelected) = remember { mutableStateOf(booleanOptions[1]) }
+    val (hypertensionSelected, onHypertensionSelected) = remember { mutableStateOf(booleanOptions[0]) }
 
     var diabetesExpanded by remember { mutableStateOf(false) }
     val (diabetesSelected, onDiabetesSelected) = remember { mutableStateOf(booleanOptions[0]) }
@@ -152,11 +152,11 @@ fun ThirdScreen(
                     .padding(top = 16.dp),
                 enabled = buttonState,
                 onClick = {
-                    buttonState = false
                     onNext?.invoke(
                         booleanOptions.indexOf(hypertensionSelected),
                         booleanOptions.indexOf(diabetesSelected),
                     )
+                    buttonState = false
                 }
             ) {
                 Text(

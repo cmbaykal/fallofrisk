@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FallOfRisk</string>
+    <string name="app_name">Fall Of Risk</string>
     <string name="app_description">This software was developed to estimate the fall risk of individuals aged 65-79.</string>
 
     <string name="next_text">Next</string>

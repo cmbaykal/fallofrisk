@@ -46,12 +46,12 @@ fun SecondScreen(
 
     var imbalanceStateExpanded by remember { mutableStateOf(false) }
     val imbalanceOptions = stringArrayResource(id = R.array.boolean_options)
-    val (imbalanceSelected, onImbalanceSelected) = remember { mutableStateOf(imbalanceOptions[1]) }
+    val (imbalanceSelected, onImbalanceSelected) = remember { mutableStateOf(imbalanceOptions[0]) }
 
     var imbalanceValueStateExpanded by remember { mutableStateOf(false) }
     val imbalanceValueOptions = stringArrayResource(id = R.array.numeric_options)
     val (imbalanceValueSelected, onImbalanceValueSelected) = remember {
-        mutableStateOf(imbalanceValueOptions[4])
+        mutableStateOf(imbalanceValueOptions[0])
     }
 
     var imbalanceTimeState by remember { mutableStateOf("") }
@@ -179,12 +179,18 @@ fun SecondScreen(
                 enabled = buttonState,
                 onClick = {
                     try {
-                        buttonState = false
+                        val imbalanceTime = if (imbalanceTimeState.isEmpty()) {
+                            0
+                        } else {
+                            imbalanceTimeState.toInt()
+                        }
+
                         onNext?.invoke(
                             imbalanceOptions.indexOf(imbalanceSelected),
                             imbalanceValueOptions.indexOf(imbalanceValueSelected),
-                            imbalanceTimeState.toInt(),
+                            imbalanceTime,
                         )
+                        buttonState = false
                     } catch (e: Exception) {
                         Toast.makeText(context, errorText, Toast.LENGTH_LONG).show()
                     }

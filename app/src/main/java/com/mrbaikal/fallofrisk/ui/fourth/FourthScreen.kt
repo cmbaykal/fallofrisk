@@ -53,8 +53,8 @@ fun FourthScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(vertical = 16.dp)
-            .verticalScroll(scrollState),
+            .verticalScroll(scrollState)
+            .padding(vertical = 16.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
         Column(

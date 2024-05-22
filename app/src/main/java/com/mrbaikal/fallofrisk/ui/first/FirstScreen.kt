@@ -126,7 +126,6 @@ fun FirstScreen(
                     .padding(top = 16.dp),
                 enabled = buttonState,
                 onClick = {
-                    buttonState = false
                     coroutineScope.launch {
                         try {
                             val lengthInMeter = (lengthState.toDouble() / 100.00)
@@ -134,6 +133,7 @@ fun FirstScreen(
                             vkiState = vki
                             delay(1000)
                             onNext?.invoke(lengthState.toInt(), vkiState)
+                            buttonState = false
                         } catch (e: Exception) {
                             Toast.makeText(context, errorText, Toast.LENGTH_LONG).show()
                         }
