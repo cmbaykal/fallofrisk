@@ -69,7 +69,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = foamState,
-                onValueChange = { foamState = it },
+                onValueChange = { foamState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.foam_romberg_hint))
                 },
@@ -82,7 +82,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = tandemState,
-                onValueChange = { tandemState = it },
+                onValueChange = { tandemState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.tandem_hint))
                 },
@@ -95,7 +95,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = reachState,
-                onValueChange = { reachState = it },
+                onValueChange = { reachState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.reaching_hint))
                 },
@@ -108,7 +108,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = goState,
-                onValueChange = { goState = it },
+                onValueChange = { goState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.go_hint))
                 },
@@ -121,7 +121,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = eyesOpenState,
-                onValueChange = { eyesOpenState = it },
+                onValueChange = { eyesOpenState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.eyes_open_hint))
                 },
@@ -134,7 +134,7 @@ fun FourthScreen(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number, imeAction = ImeAction.Next),
                 singleLine = true,
                 value = eyesClosedState,
-                onValueChange = { eyesClosedState = it },
+                onValueChange = { eyesClosedState = it.replace(",",".") },
                 label = {
                     Text(stringResource(id = R.string.eyes_closed_hint))
                 },

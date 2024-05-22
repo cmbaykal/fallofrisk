@@ -27,8 +27,8 @@
     <string name="eyes_closed_hint">Standing on One Leg with Eyes Closed Test</string>
 
     <string-array name="result_options">
-        <item>There is a low risk of falling.</item>
-        <item>There is a high of falling.</item>
+        <item>Low Fall Risk</item>
+        <item>High Fall Risk</item>
     </string-array>
 
     <string-array name="boolean_options">
